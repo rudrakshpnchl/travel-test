@@ -1,199 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wanderlust — Curated Journeys</title>
-  <meta name="description" content="Discover handcrafted travel experiences. From hidden gems to iconic destinations." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="header">
-    <nav class="nav">
-      <a href="#" class="logo">Wanderlust</a>
-      <ul class="nav-links">
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=80" alt="" class="hero-img" />
-        <div class="hero-gradient"></div>
-        <div class="hero-pattern"></div>
-      </div>
-      <div class="hero-content">
-        <p class="hero-tag">Curated journeys since 2012</p>
-        <h1 class="hero-title">Where will you <em>wander</em> next?</h1>
-        <p class="hero-sub">We design bespoke itineraries to the world’s most captivating places—from remote islands to ancient cities.</p>
-        <div class="hero-actions">
-          <a href="#experiences" class="btn btn-primary">Explore trips</a>
-          <a href="#contact" class="btn btn-ghost">Plan your journey</a>
-        </div>
-      </div>
-      <div class="hero-scroll">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <section id="destinations" class="section destinations">
-      <div class="container">
-        <p class="section-tag">Destinations</p>
-        <h2 class="section-title">Places we love</h2>
-        <div class="dest-grid">
-          <article class="dest-card" data-dest="santorini">
-            <div class="dest-image">
-              <img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=600&q=80" alt="Santorini, Greece — white villages and blue domes" loading="lazy" />
-              <span class="dest-label">Greece</span>
-            </div>
-            <h3>Santorini</h3>
-            <p>White villages, blue domes & sunset views</p>
-          </article>
-          <article class="dest-card" data-dest="kyoto">
-            <div class="dest-image">
-              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Kyoto, Japan — temples and traditional architecture" loading="lazy" />
-              <span class="dest-label">Japan</span>
-            </div>
-            <h3>Kyoto</h3>
-            <p>Temples, tea ceremonies & cherry blossoms</p>
-          </article>
-          <article class="dest-card" data-dest="safari">
-            <div class="dest-image">
-              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" alt="Serengeti, Tanzania — wildlife and savanna" loading="lazy" />
-              <span class="dest-label">Tanzania</span>
-            </div>
-            <h3>Serengeti</h3>
-            <p>Wildlife, vast plains & stargazing</p>
-          </article>
-          <article class="dest-card" data-dest="patagonia">
-            <div class="dest-image">
-              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Patagonia, Chile — mountains and glaciers" loading="lazy" />
-              <span class="dest-label">Chile</span>
-            </div>
-            <h3>Patagonia</h3>
-            <p>Glaciers, mountains & raw nature</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experiences" class="section experiences">
-      <div class="container">
-        <p class="section-tag">Experiences</p>
-        <h2 class="section-title">Handcrafted itineraries</h2>
-        <div class="exp-list">
-          <article class="exp-card">
-            <div class="exp-visual">
-              <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80" alt="Italian Riviera — coastal villages" loading="lazy" />
-            </div>
-            <div class="exp-body">
-              <span class="exp-days">12 days</span>
-              <h3>Italian Riviera & Tuscan Hills</h3>
-              <p>Coastal villages, wine country, and Renaissance art. Private villas, cooking classes, and sunset sails.</p>
-              <a href="#contact" class="link-arrow">Inquire</a>
-            </div>
-          </article>
-          <article class="exp-card">
-            <div class="exp-visual">
-              <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&q=80" alt="Iceland — glaciers and ice caves" loading="lazy" />
-            </div>
-            <div class="exp-body">
-              <span class="exp-days">9 days</span>
-              <h3>Iceland: Fire & Ice</h3>
-              <p>Glaciers, hot springs, northern lights. Small groups, expert guides, and otherworldly landscapes.</p>
-              <a href="#contact" class="link-arrow">Inquire</a>
-            </div>
-          </article>
-          <article class="exp-card">
-            <div class="exp-visual">
-              <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&q=80" alt="Morocco — Sahara desert" loading="lazy" />
-            </div>
-            <div class="exp-body">
-              <span class="exp-days">14 days</span>
-              <h3>Morocco: Souks to Sahara</h3>
-              <p>Marrakech, Fes, and a night under the stars in the desert. Riads, spice markets, and camel treks.</p>
-              <a href="#contact" class="link-arrow">Inquire</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section quote-section">
-      <div class="container">
-        <blockquote class="quote">
-          <p>“Travel isn’t about ticking boxes. It’s about the moment the light hits the mountain, the taste of a dish you’ll never forget, and the people who make a place come alive.”</p>
-          <footer>— Our philosophy</footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container split">
-        <div class="about-text">
-          <p class="section-tag">About us</p>
-          <h2 class="section-title">We’re travel designers, not tour operators.</h2>
-          <p>Every trip we create is tailored to you. We work with local experts, boutique hotels, and hidden experiences that don’t show up in guidebooks. No cookie-cutter tours—just journeys that feel like yours.</p>
-          <ul class="about-stats">
-            <li><strong>50+</strong> countries</li>
-            <li><strong>12</strong> years of curating</li>
-            <li><strong>98%</strong> clients who return</li>
-          </ul>
-        </div>
-        <div class="about-visual">
-          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80" alt="Curated travel planning" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section cta">
-      <div class="container">
-        <div class="cta-box">
-          <h2 class="cta-title">Ready to wander?</h2>
-          <p>Tell us your dreams—we’ll map the journey.</p>
-          <form class="cta-form" id="contact-form">
-            <div class="form-row">
-              <input type="text" name="name" placeholder="Your name" required />
-              <input type="email" name="email" placeholder="Email" required />
-            </div>
-            <textarea name="message" placeholder="Where do you want to go? (optional)" rows="3"></textarea>
-            <button type="submit" class="btn btn-primary btn-full">Send inquiry</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust — Curated Journeys</title>
+    <meta
+      name="description"
+      content="Discover handcrafted travel experiences. From hidden gems to iconic destinations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
         <a href="#" class="logo">Wanderlust</a>
-        <p class="footer-tagline">Curated journeys. Unforgettable moments.</p>
-        <ul class="footer-links">
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Experiences</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav-links">
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2025 Wanderlust. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
 
-  <script src="script.js"></script>
-</body>
+    <main>
+      <section class="hero">
+        <div class="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=80"
+            alt=""
+            class="hero-img"
+          />
+          <div class="hero-gradient"></div>
+          <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-tag">Curated journeys since 2012</p>
+          <h1 class="hero-title">Where will you <em>wander</em> next?</h1>
+          <p class="hero-sub">
+            We design bespoke itineraries to the world’s most captivating
+            places—from remote islands to ancient cities.
+          </p>
+          <div class="hero-actions">
+            <a href="#experiences" class="btn btn-primary">Explore trips</a>
+            <a href="#contact" class="btn btn-ghost">Plan your journey</a>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <section id="destinations" class="section destinations">
+        <div class="container">
+          <p class="section-tag">Destinations</p>
+          <h2 class="section-title">Places we love</h2>
+          <div class="dest-grid">
+            <article class="dest-card" data-dest="santorini">
+              <div class="dest-image">
+                <img
+                  src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=600&q=80"
+                  alt="Santorini, Greece — white villages and blue domes"
+                  loading="lazy"
+                />
+                <span class="dest-label">Greece</span>
+              </div>
+              <h3>Santorini</h3>
+              <p>White villages, blue domes & sunset views</p>
+            </article>
+            <article class="dest-card" data-dest="kyoto">
+              <div class="dest-image">
+                <img
+                  src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80"
+                  alt="Kyoto, Japan — temples and traditional architecture"
+                  loading="lazy"
+                />
+                <span class="dest-label">Japan</span>
+              </div>
+              <h3>Kyoto</h3>
+              <p>Temples, tea ceremonies & cherry blossoms</p>
+            </article>
+            <article class="dest-card" data-dest="safari">
+              <div class="dest-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80"
+                  alt="Serengeti, Tanzania — wildlife and savanna"
+                  loading="lazy"
+                />
+                <span class="dest-label">Tanzania</span>
+              </div>
+              <h3>Serengeti</h3>
+              <p>Wildlife, vast plains & stargazing</p>
+            </article>
+            <article class="dest-card" data-dest="patagonia">
+              <div class="dest-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80"
+                  alt="Patagonia, Chile — mountains and glaciers"
+                  loading="lazy"
+                />
+                <span class="dest-label">Chile</span>
+              </div>
+              <h3>Patagonia</h3>
+              <p>Glaciers, mountains & raw nature</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" class="section experiences">
+        <div class="container">
+          <p class="section-tag">Experiences</p>
+          <h2 class="section-title">Handcrafted itineraries</h2>
+          <div class="exp-list">
+            <article class="exp-card">
+              <div class="exp-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80"
+                  alt="Italian Riviera — coastal villages"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-body">
+                <span class="exp-days">12 days</span>
+                <h3>Italian Riviera & Tuscan Hills</h3>
+                <p>
+                  Coastal villages, wine country, and Renaissance art. Private
+                  villas, cooking classes, and sunset sails.
+                </p>
+                <a href="#contact" class="link-arrow">Inquire</a>
+              </div>
+            </article>
+            <article class="exp-card">
+              <div class="exp-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&q=80"
+                  alt="Iceland — glaciers and ice caves"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-body">
+                <span class="exp-days">9 days</span>
+                <h3>Iceland: Fire & Ice</h3>
+                <p>
+                  Glaciers, hot springs, northern lights. Small groups, expert
+                  guides, and otherworldly landscapes.
+                </p>
+                <a href="#contact" class="link-arrow">Inquire</a>
+              </div>
+            </article>
+            <article class="exp-card">
+              <div class="exp-visual">
+                <img
+                  src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&q=80"
+                  alt="Morocco — Sahara desert"
+                  loading="lazy"
+                />
+              </div>
+              <div class="exp-body">
+                <span class="exp-days">14 days</span>
+                <h3>Morocco: Souks to Sahara</h3>
+                <p>
+                  Marrakech, Fes, and a night under the stars in the desert.
+                  Riads, spice markets, and camel treks.
+                </p>
+                <a href="#contact" class="link-arrow">Inquire</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-section">
+        <div class="container">
+          <blockquote class="quote">
+            <p>
+              “Travel isn’t about ticking boxes. It’s about the moment the light
+              hits the mountain, the taste of a dish you’ll never forget, and
+              the people who make a place come alive.”
+            </p>
+            <footer>— Our philosophy</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container split">
+          <div class="about-text">
+            <p class="section-tag">About us</p>
+            <h2 class="section-title">
+              We’re travel designers, not tour operators.
+            </h2>
+            <p>
+              Every trip we create is tailored to you. We work with local
+              experts, boutique hotels, and hidden experiences that don’t show
+              up in guidebooks. No cookie-cutter tours—just journeys that feel
+              like yours.
+            </p>
+            <ul class="about-stats">
+              <li><strong>50+</strong> countries</li>
+              <li><strong>12</strong> years of curating</li>
+              <li><strong>98%</strong> clients who return</li>
+            </ul>
+          </div>
+          <div class="about-visual">
+            <img
+              src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80"
+              alt="Curated travel planning"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta">
+        <div class="container">
+          <div class="cta-box">
+            <h2 class="cta-title">Ready to wander?</h2>
+            <p>Tell us your dreams—we’ll map the journey.</p>
+            <form class="cta-form" id="contact-form">
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <textarea
+                name="message"
+                placeholder="Where do you want to go? (optional)"
+                rows="3"
+              ></textarea>
+              <button type="submit" class="btn btn-primary btn-full">
+                Send inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <a href="#" class="logo">Wanderlust</a>
+          <p class="footer-tagline">Curated journeys. Unforgettable moments.</p>
+          <ul class="footer-links">
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <p class="footer-copy">
+            &copy; 2025 Wanderlust. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

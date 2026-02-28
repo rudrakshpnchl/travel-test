@@ -22,7 +22,10 @@
   if (navToggle && navLinks) {
     navToggle.addEventListener("click", function () {
       navLinks.classList.toggle("open");
-      navToggle.setAttribute("aria-expanded", navLinks.classList.contains("open"));
+      navToggle.setAttribute(
+        "aria-expanded",
+        navLinks.classList.contains("open"),
+      );
     });
 
     // Close menu when clicking a link (smooth scroll then close)
